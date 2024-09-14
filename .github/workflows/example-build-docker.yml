@@ -43,9 +43,14 @@ jobs:
       env:
         ECR_URI: 141788647890.dkr.ecr.us-east-1.amazonaws.com/web-app
         IMAGE_TAG: ${{ github.sha }}
-      run: |
-        docker build -t $ECR_URI:$IMAGE_TAG .
+      run:
+        yarn --frozen-lockfile
+        yarn nx build api-flowaccount-workshop
+        docker build -t $ECR_URI:$IMAGE_TAG
         docker push $ECR_URI:$IMAGE_TAG
+    #   run: |
+    #     docker build -t $ECR_URI:$IMAGE_TAG .
+    #     docker push $ECR_URI:$IMAGE_TAG
 
     - name: Image digest
       run: |
