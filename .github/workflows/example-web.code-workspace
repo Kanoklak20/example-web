@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../../example-web"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../ISSUE_TEMPLATE"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../.vscode"
+		},
+		{
+			"path": "../../apps"
+		},
+		{
+			"path": "../../docker"
+		},
+		{
+			"path": "../../libs"
+		},
+		{
+			"path": "../../tools"
+		}
+	],
+	"settings": {}
+}
